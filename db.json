@@ -1,28 +1,56 @@
 {
-    "bg": "https://wallpaperaccess.com/full/1111446.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://tanukinosippo.com/wp-content/uploads/2015/02/Lycanthrope-Bloodborne-HD-Wallpaper.jpg",
+    "title": "Quiz bloodborne",
+    "description": "Teste os seus conhecimentos sobre esse magnífico game",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://i.pinimg.com/originals/e2/da/64/e2da64998d736532bafea8a132be2c4a.gif",
+        "title": "Por que o Gerhman criou uma boneca ?",
+        "description": "Só para aquecer",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Para ele lembrar de sua amada.",
+          "Porque ele estava carente por perder sua amada, então criou uma boneca igual a ela.",
+          "Porque ela é bonita.",
+          "Pra cuidar do local e cuidar de todos que chegam ali."
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://i.pinimg.com/originals/8d/95/ae/8d95aefc733edb3f172bb8ae02dec53c.gif",
+        "title": "Bloodborne é inspirado em livros de qual autor(a) ?",
+        "description": "Agora vai começar a ficar sério.",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Howard Phillips Lovecraft",
+           "Stephen King.",
+           "Mary Shelley.",
+           "Edgar Allan Poe.",
+           "Bram Stoker."
+          ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/95/09/b7/9509b7bcd6a2cee59768b385ab267931.gif",
+        "title": "Qual o nome desses bixinhos ?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "Hobbit.",
+           "Minions.",
+           "Mensageiros.",
+           "Eminentes.",
+           "Emissário celestial."
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/c4/d2/b2/c4d2b234f08b79429f6b2b97c052818a.gif",
+        "title": "Por que a Maria cometeu suicídio ?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "Porque ela perdeu o gerhman, que era a pessoa que ela mais amava.",
+          "Ela não cometeu suicídio, ela morreu em batalha.",
+          "Porque ela fez as pessoas sofrerem muito.",
+          "Porque ela não se perdoou pelo massacre e pela dor que ela estava causando."
         ]
       }
     ],

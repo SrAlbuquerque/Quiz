@@ -1,33 +1,46 @@
-import styled from 'styled-components';
+import React from 'react';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget/index';
 import QuizBackground from '../src/components/QuizBackground/index';
 import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
-
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
+import Input from '../src/components/Input/index';
+import Button from '../src/components/Button/index';
+import QuizContainer from '../src/components/QuizContainer/index';
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
-    <QuizBackground backgroundImage = {db.bg} >
+    <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Bloodborne - quiz</title>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
             <h1>Bloodborne</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Alguma coisa escrita aqui</p>
+            <form onSubmit={function RouteUrl(infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <Input
+                name="nomeDoUsuário"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="digite seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                Jogar
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -40,7 +53,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl= "https://github.com/SrAlbuquerque" />
+      <GitHubCorner projectUrl="https://github.com/SrAlbuquerque" />
     </QuizBackground>
   );
 }
